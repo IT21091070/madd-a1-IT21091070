@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/single_item.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/single_item.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/item_booking2.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/item_booking2.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_request_quote.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_request_quote.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_booking_success.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_booking_success.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_other_page.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_other_page.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_forget_password.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_forget_password.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_admin_book_list.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_admin_book_list.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_item_place.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_item_place.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/cutomer_reuest_list.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/cutomer_reuest_list.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_image_adapter.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_image_adapter.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_profile.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/single_item3.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/single_item3.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_admin_home.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_admin_home.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/bottom_nav_menu.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_login_page.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_login_page.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_main.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/item_place.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/item_place.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/single_item2.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/single_item2.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_booking.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_booking.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_login.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_place_adapter.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_place_adapter.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_notification.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_notification.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/item_single_place.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/item_single_place.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_email_password_sign_up.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_email_password_sign_up.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_location.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_location.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/item_booking.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/item_booking.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_home.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_booking_list.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_booking_list.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_customer_request.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_customer_request.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_place_details.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_place_details.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_email_password_login.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_email_password_login.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_start_page.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_start_page.xml"
+    },
+    {
+        "merged": "com.example.travelmate2.app-mergeDebugResources-41:/layout/activity_login_success_page.xml",
+        "source": "com.example.travelmate2.app-main-44:/layout/activity_login_success_page.xml"
+    }
+]
