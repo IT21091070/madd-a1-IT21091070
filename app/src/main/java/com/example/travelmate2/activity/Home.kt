@@ -418,6 +418,7 @@ class Home : AppCompatActivity() {
         class SinglePlaceViewHolder(itemView: View, private val onClick: (SinglePlace) -> Unit) : ViewHolder(itemView) {
             private val imageView: ImageView = itemView.findViewById(R.id.imageView)
             private val descriptionView: TextView = itemView.findViewById(R.id.descriptionView)
+            private val placeView: TextView = itemView.findViewById(R.id.placeView)
             private val moreButton: Button = itemView.findViewById(R.id.button9)
 
             fun bind(singlePlace: SinglePlace) {
@@ -425,6 +426,7 @@ class Home : AppCompatActivity() {
                 Picasso.get().load(singlePlace.url).into(imageView)
                 // Set description
                 descriptionView.text = singlePlace.des
+                placeView.text = singlePlace.place
                 descriptionView.textSize = 12f
                 descriptionView.setTypeface(null, android.graphics.Typeface.BOLD)
 

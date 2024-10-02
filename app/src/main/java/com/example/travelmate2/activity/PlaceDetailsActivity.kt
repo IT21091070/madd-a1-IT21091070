@@ -83,7 +83,7 @@ class PlaceDetailsActivity : AppCompatActivity() {
                         val singlePlace = document.toObject(SinglePlace::class.java)
                         singlePlace?.let { place ->
                             Picasso.get().load(place.url).into(imageView)
-                            descriptionView.text = place.des
+                            descriptionView.text = place.longdes
                         }
                     }
                 }

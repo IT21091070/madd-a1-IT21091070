@@ -11,9 +11,11 @@ class SinglePlace(
     val url: String = "",
     val des: String = "",
     val place: String ="",
-    val location: String = ""
+    val location: String = "",
+    val longdes: String = "",
 )
- class Booking(
+
+class Booking(
     val userId: String = "",
     val name: String = "",
     val mobile: String = "",
