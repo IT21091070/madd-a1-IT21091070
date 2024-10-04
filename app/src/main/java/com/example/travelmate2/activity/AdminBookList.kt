@@ -147,8 +147,9 @@ class AdminBookList : AppCompatActivity() {
 
         if (userId != null) {
             db.collection("bookings")
-                .whereEqualTo("isBooking", true)
+                .whereEqualTo("isBooking", false)
                 .whereEqualTo("isConfirmed", true)
+                .whereEqualTo("isCancel", false)
                 .get()
                 .addOnSuccessListener { result ->
                     bookingList.clear() // Clear the list before adding new data

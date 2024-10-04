@@ -31,17 +31,14 @@ class BookingList : AppCompatActivity() {
         val recyclerViewBookings = findViewById<RecyclerView>(R.id.recyclerViewBookings)
         recyclerViewBookings.layoutManager = LinearLayoutManager(this)
 
-        bookingAdapter = BookingAdapter(bookingList, { booking ->
+        bookingAdapter = BookingAdapter(bookingList) { booking ->
             cancelBooking(booking)
-        }, { booking ->
-            confirmBooking(booking)
-        })
+        }
 
         recyclerViewBookings.adapter = bookingAdapter
 
         // Fetch bookings from Firestore
         fetchBookings()
-
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.selectedItemId = R.id.nav_booking
@@ -53,7 +50,6 @@ class BookingList : AppCompatActivity() {
                     true
                 }
                 R.id.nav_booking -> {
-
                     true
                 }
                 R.id.nav_notifi -> {
@@ -74,15 +70,13 @@ class BookingList : AppCompatActivity() {
     // Adapter for RecyclerView
     class BookingAdapter(
         private val bookingList: List<Booking>,
-        private val onCancelClick: (Booking) -> Unit,
-        private val onConfirmClick: (Booking) -> Unit
+        private val onCancelClick: (Booking) -> Unit
     ) : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
 
         class BookingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val destination: TextView = itemView.findViewById(R.id.bookingDestination)
             val pickupLocation: TextView = itemView.findViewById(R.id.bookingPickupLocation)
             val cancelButton: Button = itemView.findViewById(R.id.buttonCancelBooking)
-            val confirmButton: Button = itemView.findViewById(R.id.button11)
             val bookingAmount: TextView = itemView.findViewById(R.id.bookingAmount)
             val userName: TextView = itemView.findViewById(R.id.userName)
             val pickupDate: TextView = itemView.findViewById(R.id.bookingPickupDate)
@@ -91,7 +85,7 @@ class BookingList : AppCompatActivity() {
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookingViewHolder {
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_booking, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_booking2, parent, false)
             return BookingViewHolder(view)
         }
 
@@ -129,16 +123,11 @@ class BookingList : AppCompatActivity() {
                     holder.bookingAmount.text = "Error fetching quote: ${exception.message}"
                 }
 
-            // Set click listeners for buttons
+            // Set click listener for the cancel button
             holder.cancelButton.setOnClickListener {
                 onCancelClick(booking)
             }
-
-            holder.confirmButton.setOnClickListener {
-                onConfirmClick(booking)
-            }
         }
-
 
         override fun getItemCount(): Int {
             return bookingList.size
@@ -183,7 +172,6 @@ class BookingList : AppCompatActivity() {
         }
     }
 
-
     // Handle booking cancellation
     private fun cancelBooking(booking: Booking) {
         val db = FirebaseFirestore.getInstance()
@@ -200,25 +188,6 @@ class BookingList : AppCompatActivity() {
             }
             .addOnFailureListener { exception ->
                 Toast.makeText(this, "Error cancelling booking: ${exception.message}", Toast.LENGTH_SHORT).show()
-            }
-    }
-
-    // Handle booking confirmation
-    private fun confirmBooking(booking: Booking) {
-        val db = FirebaseFirestore.getInstance()
-
-        // Ensure that you use the Firestore document ID for the update
-        db.collection("bookings").document(booking.documentId)
-            .update(mapOf(
-                "isConfirmed" to true,
-                "isBooking" to false
-            ))
-            .addOnSuccessListener {
-                Toast.makeText(this, "Booking confirmed successfully!", Toast.LENGTH_SHORT).show()
-                fetchBookings() // Refresh the list after confirmation
-            }
-            .addOnFailureListener { exception ->
-                Toast.makeText(this, "Error confirming booking: ${exception.message}", Toast.LENGTH_SHORT).show()
             }
     }
 }

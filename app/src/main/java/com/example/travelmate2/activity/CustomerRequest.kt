@@ -204,6 +204,8 @@ class CustomerRequest : AppCompatActivity() {
         db.collection("bookings").document(booking.documentId)
             .update(mapOf(
                 "isRequestQuote" to false,
+                "isConfirmed" to true,
+                "isBooking" to false,
                 "amount" to updatedAmount // Update Firestore with the new amount
             ))
             .addOnSuccessListener {

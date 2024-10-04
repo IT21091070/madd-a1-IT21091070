@@ -22,13 +22,13 @@
 
     <TextView
         android:id="@+id/bookingDestination"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="@string/destination"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
@@ -45,23 +45,32 @@
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
-        android:id="@+id/bookingPickupLocation"
+        android:id="@+id/bookingId"
         android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/pickup_location"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="92dp"
+        android:text="Booking Id"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck,TextContrastCheck" />
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Pick Up Date :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/bookingPickupDate"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="Pick Up Date"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,45 +93,37 @@
         tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/pick_up_location"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck,TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="Pick Up Date :"
+        android:layout_marginTop="92dp"
+        android:text="Booking ID :"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/bookingPickupTime"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/pickup_location"
-        android:textSize="14sp"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="122dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="212dp"
+        android:background="@color/white"
+        android:hint="Add Amount"
+        android:inputType="numberDecimal"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bookingPickupDate"
-        tools:ignore="TextSizeCheck,TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck,HardcodedText,MissingConstraints,RtlSymmetry,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="84dp"
         android:layout_height="26dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="248dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/round_btn"
         android:text="@string/confirm"
@@ -132,37 +133,52 @@
         tools:ignore="MissingConstraints,TextSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
+        android:id="@+id/bookingPickupLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/pickup_location"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:text="Pick Up Date :"
+        android:layout_marginTop="44dp"
+        android:text="Pick Up Time :"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         tools:ignore="DuplicateIds,HardcodedText,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="22dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="76dp"
-        android:text="Booking ID :"
+        android:layout_marginTop="116dp"
+        android:text="@string/pick_up_location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/bookingId"
+        android:id="@+id/bookingPickupTime"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="76dp"
-        android:text="Booking Id"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/pickup_location"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/bookingPickupDate"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView21"
@@ -185,22 +201,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TextContrastCheck" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editTextAmount"
-        android:layout_width="122dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="196dp"
-        android:background="@color/white"
-        android:hint="Add Amount"
-        android:inputType="numberDecimal"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateClickableBoundsCheck,HardcodedText,MissingConstraints,RtlSymmetry,TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
